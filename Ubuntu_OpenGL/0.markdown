@@ -1,0 +1,51 @@
+# 在Ubuntu下安装OpenGL/Glut库 #
+
+## 安装 ##
+ 
+ 1. 打开终端或Ctrl+Alt+t，然后输入
+ 
+ 		sudo apt-get install freeglut3 freeglut3-dev
+ 
+ 2. 如果版本（>=11.10）还要安装：
+ 
+		sudo apt-get install binutils-gold 
+
+## 测试 ##
+
+创建一个测试文件star.cpp，输入以下程序:
+
+	#include<GL/glut.h>
+	void star(void){
+    	glClear(GL_COLOR_BUFFER_BIT);
+    	glColor3d(1.0,1.0,0.0);
+    	glBegin(GL_LINE_STRIP);
+    	glVertex2d(200,200);
+    	glVertex2d(350,350);
+    	glVertex2d(300,100);
+    	glVertex2d(200,350);
+    	glVertex2d(400,200);
+    	glVertex2d(200,200);
+    	glEnd();
+    	glFlush();
+	}
+	int main(int argc,char** argv){
+    	glutInit(&argc,argv);
+    	glutInitWindowSize(600,600);
+    	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+    	glutCreateWindow("Star");
+    	glutDisplayFunc(star);
+    	gluOrtho2D(0,500,0,500);
+    	glClearColor(0.0,0.0,0.0,0.0);
+    	glutMainLoop();
+    	return 0;
+	}
+
+编译程序：
+
+	# g++ -lGL -lGLU -lglut star.cpp
+	# ./a.out
+然后你会看到一个小星星！
+
+### 链接 ###
+
+[Install OpenGL/Glut Libraries in Ubuntu](http://www.techtofun.com/2013/08/10/install-openglglut-libraries-in-ubuntu/)

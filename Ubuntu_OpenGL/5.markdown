@@ -1,0 +1,52 @@
+# 5.四边形#
+
+## 程序Quadrilateral.cpp ##
+ 
+	#include<GL/glut.h>
+	void Quadrilateral(void){
+    	glClear(GL_COLOR_BUFFER_BIT);
+    	glBegin(GL_QUADS);
+    	// 1st Quadrilateral 
+    	glColor3f(1.0,1.0,1.0), glVertex2d(100,200);
+    	glColor3f(0.7,0.7,0.7), glVertex2d(100,300);
+    	glColor3f(0.5,0.5,0.5), glVertex2d(200,295);
+    	glColor3f(0.1,0.1,0.1), glVertex2d(200,205);
+    
+		// 2nd Quadrilateral
+    	glColor3f(1.0,0.0,0.0), glVertex2d(200,205);
+    	glColor3f(0.5,1.0,0.0), glVertex2d(200,295);
+    	glColor3f(0.0,1.0,0.5), glVertex2d(300,295);
+    	glColor3f(0.0,0.0,1.0), glVertex2d(300,205);
+    
+		// 3rd Quadrilateral
+    	glColor3f(1.0,1.0,1.0), glVertex2d(300,205);
+    	glColor3f(0.7,0.7,0.7), glVertex2d(300,295);
+    	glColor3f(0.5,0.5,0.5), glVertex2d(400,300);
+    	glColor3f(0.1,0.1,0.1), glVertex2d(400,200);
+ 
+ 		glEnd();
+    	glFlush();
+	}
+	int main(int argc,char **argv){
+    	glutInit(&argc,argv);
+    	glutInitWindowSize(500,500);
+    	glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
+    	glutCreateWindow("Quadrilateral");
+    	glutDisplayFunc(Quadrilateral);
+    	gluOrtho2D(0,500,0,500);
+    	glClearColor(1.0,1.0,1.0,1.0);
+    	glutMainLoop();
+	}
+
+## 测试 ##
+
+	# g++ -lGL -lGLU -lglut Quadrilateral.cpp
+	# ./a.out
+
+## 效果 ##
+	
+![](./img/Quadrilateral.png)
+
+### 链接 ###
+
+[Computer Graphics – 5. Quadrilateral](http://www.techtofun.com/2013/08/14/computer-graphics-5-quadrilateral/)
