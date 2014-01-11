@@ -1,0 +1,492 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	pre,code {
+		word-wrap: break-word;
+	}	
+	/*
+	table, pre {
+		page-break-inside: avoid;
+	}
+	*/
+}
+</style>
+<title>5.md</title>
+</head>
+<body>
+<h2>直接操作和表示</h2>
+
+<ul>
+<li><a href="#1">直接操作</a></li>
+<li><a href="#2">思维模式</a></li>
+<li><a href="#3">表示问题</a></li>
+<li><a href="#4">分散认知(1)</a></li>
+<li>分散认知(2)</li>
+</ul>
+
+<p><a name="1"></a></p>
+
+<h2>直接操作</h2>
+
+<p>好的设计关键：</p>
+
+<ul>
+<li>是什么使一个界面变得容易、困难或“自然”？</li>
+</ul>
+
+<p>我们如何改进量杯？</p>
+
+<p>The making of gulfs. How easily can someone:</p>
+
+<ul>
+<li>确定设备功能？</li>
+<li>告诉可能的行动是什么？</li>
+<li>决定将想法辅助行动？</li>
+<li>执行行动？</li>
+<li>了解系统处于什么状态？是否在理想状态下？</li>
+<li>确定系统状态到解释的映射</li>
+</ul>
+
+<p>To reduce the gulfs, provide：</p>
+
+<ul>
+<li>Visibility (perceived affordances or signifiers)</li>
+<li>Feedback</li>
+<li>Consistency (also known as standards)</li>
+<li>Non-destructive operations (hence the importance of undo)</li>
+<li>Discoverability: All operations can be discovered by systematic exploration of menus</li>
+<li>Reliability. Operations should work. Period. And events should not happen randomly.</li>
+</ul>
+
+<h3>命令行和GUI比较</h3>
+
+<p>直接操作</p>
+
+<ul>
+<li>对动作立即反馈</li>
+<li>对象的连续式表达</li>
+<li>利用隐喻</li>
+</ul>
+
+<p>成功的间接性？</p>
+
+<p>着眼未来：手势</p>
+
+<ul>
+<li>解决menu creep的方案？</li>
+<li>更直接？</li>
+</ul>
+
+<p>了解更多：</p>
+
+<ul>
+<li>Don Norman, The Design of Everyday Things</li>
+<li>Hutchins, Hollan, Norman, Direct manipulation interfaces, 1985</li>
+</ul>
+
+<p><a name="2"></a></p>
+
+<h2>思维模式</h2>
+
+<p>好的设计关键：</p>
+
+<ul>
+<li>是什么让一个界面是可学的？</li>
+<li>是什么引起错误？</li>
+</ul>
+
+<p>目标：设计指引正确的模型</p>
+
+<ul>
+<li>用户模型的发展通过和系统交互</li>
+<li>设计师通常期待用户的模型是和他们的一样</li>
+<li>但通常不是</li>
+</ul>
+
+<p>概念模型不匹配</p>
+
+<ul>
+<li>设计师和用户的概念模型不匹配导致：
+
+<ul>
+<li>降低性能</li>
+<li>错误</li>
+<li>挫折</li>
+</ul></li>
+</ul>
+
+<p>思维模式从经验、隐喻和相似的推理得到：</p>
+
+<ul>
+<li>“一个文本处理器是一个打字机”</li>
+<li>我们有关于我们的行为、其他人、对象、软件的模型</li>
+<li>我们的模型不完全、不一致、时间不稳定、充斥着怀疑</li>
+</ul>
+
+<p>Slips和Mistakes</p>
+
+<p>直接操作提供了：</p>
+
+<ul>
+<li>利用现实世界的隐喻</li>
+<li>关于每个对象如何工作以及如何控制它的好的主意</li>
+<li>界面披露了如何使用它</li>
+</ul>
+
+<p>“If technology is to provide an advantage, the correspondence to the real world must break down at some point.” - Jonathan Grudin</p>
+
+<p>了解更多：</p>
+
+<ul>
+<li>JM Carroll, JR Olson, Mental models in human-computer interaction: Research issues, 1987</li>
+<li>Don Norman, Design of Everyday Things</li>
+<li>James Reason, Human Error</li>
+<li>Butterfly Ballots in Palm Beach County, 2000: <a href="http://elections.berkeley.edu/statement/hbrady/node4.html">http://elections.berkeley.edu/statement/hbrady/node4.html</a></li>
+</ul>
+
+<p><a name="3"></a></p>
+
+<h2>表示问题</h2>
+
+<p>The Oranges Puzzle</p>
+
+<p>Problem Solving as Representation</p>
+
+<p>“Solving a problem simply means representing it so as to make the solution transparent”
+—Herbert Simon, The Sciences of the Artificial</p>
+
+<p><strong>自然准则：</strong></p>
+
+<ul>
+<li>经验认知是辅助的，当表现的属性和物体表现的属性相匹配。</li>
+</ul>
+
+<p><a name="4"></a></p>
+
+<h2>分散认知</h2>
+
+<p>当界面帮助人们分配认知，它能：</p>
+
+<ul>
+<li>鼓励实验</li>
+<li>Scaffold learning，通过冗余减少错误</li>
+<li>显示差异</li>
+<li>转换缓慢计算为快速的知觉</li>
+<li>支持模块，特别是专家</li>
+<li>增加效率</li>
+<li>促进合作</li>
+</ul>
+
+<p>一个好的表现：</p>
+
+<ul>
+<li>显示所有的相关信息，没有别的。应该能：</li>
+<li>比较</li>
+<li>探测</li>
+<li>错误解决</li>
+</ul>
+
+<p>信息等价 ！= 计算等价</p>
+
+<p>A pair of parallel lines is cut by a transversal</p>
+
+<p>一个驾驶员如何记得它的速度</p>
+
+<p>Poor Representations: Common but Deadly</p>
+
+<p>进一步阅读：</p>
+
+<ul>
+<li>Don Norman, Things that Make Us Smart</li>
+<li>Ed Hutchins, Cognition in the Wild</li>
+<li>Herbert Simon, Sciences of the Artificial</li>
+<li>Edward Tufte, Visual Explanations</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,594 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	pre,code {
+		word-wrap: break-word;
+	}	
+	/*
+	table, pre {
+		page-break-inside: avoid;
+	}
+	*/
+}
+</style>
+<title>4.md</title>
+</head>
+<body>
+<h2>启发式评估</h2>
+
+<ul>
+<li><a href="#1">启发式评估 -- 为什么以及如何？</a></li>
+<li><a href="#2">设计启发（1）</a></li>
+<li><a href="#3">设计启发（2）</a></li>
+</ul>
+
+<p><a name="1"></a></p>
+
+<h2>启发式评估 -- 为什么以及如何？</h2>
+
+<p>多种评估方式：</p>
+
+<ul>
+<li>经验：评价实际的用户</li>
+<li>常规：模型和公式计算测量</li>
+<li>自动化：软件策略</li>
+<li>批评：专业知识和启发式反馈</li>
+</ul>
+
+<p>什么时候得到批评设计？</p>
+
+<ul>
+<li>用户测试前。不要让用户浪费在小问题上。</li>
+<li>在重新设计前。批评可以让你学到改进的地方。</li>
+<li>当你知道有问题时，但是你需要证据。</li>
+<li>在发布之前。</li>
+</ul>
+
+<p>Begin Review with a Clear Goal</p>
+
+<p><strong>启发式评估：</strong></p>
+
+<ul>
+<li>由Jakob Nielsen开发</li>
+<li>在一个设计中帮助找到可用性问题</li>
+<li>Small set评估检查用户界面
+
+<ul>
+<li>独立检查符合可用性原则</li>
+<li>不同的评价者会找到不同的问题</li>
+<li>评估者只在之后沟通</li>
+</ul></li>
+<li>可以在工作界面或草图上执行</li>
+</ul>
+
+<p>Ten Design Heuristics</p>
+
+<p><strong>评估过程：</strong></p>
+
+<ul>
+<li>通过多次设计步骤
+
+<ul>
+<li>检查细节、工作流和结构</li>
+<li>参考列表的可用性原则</li>
+<li>其它所想到的</li>
+</ul></li>
+<li>什么原则？
+
+<ul>
+<li>Nielsen的“heuristics”</li>
+</ul></li>
+<li>使用violations来重设计或解决问题</li>
+</ul>
+
+<p>为什么要多个评估者？</p>
+
+<ul>
+<li>没有一个评估者可以找到所有问题</li>
+<li>一些人会比另一些找到更多</li>
+</ul>
+
+<p>Heuristics和用户测试的比较：</p>
+
+<ul>
+<li>Heuristics Evaluation更快
+
+<ul>
+<li>每个评估者1-2小时</li>
+</ul></li>
+<li>HE的结果预解释</li>
+<li>用户测试更精确
+
+<ul>
+<li>考虑真实的用户和任务</li>
+<li>HE可能会遗漏问题，并且找到“false positives”</li>
+</ul></li>
+<li>有价值的替代方法
+
+<ul>
+<li>找到不同的问题</li>
+<li>不浪费参与者</li>
+</ul></li>
+</ul>
+
+<p>Heuristic Evaluation阶段：</p>
+
+<ul>
+<li>Pre-evaluation training</li>
+<li>Evaluation</li>
+<li>Severity rating</li>
+<li>Debriefing</li>
+</ul>
+
+<p>How-to: Heuristic Evaluation</p>
+
+<ul>
+<li>At least two passes for each evaluator
+
+<ul>
+<li>first to get feel for flow and scope of system</li>
+<li>second to focus on specific elements</li>
+</ul></li>
+<li>If system is walk-up-and-use or evaluators are domain experts, no assistance needed
+
+<ul>
+<li>otherwise might supply evaluators with scenarios</li>
+</ul></li>
+<li>Each evaluator produces list of problems
+
+<ul>
+<li>explain why with reference to heuristic or other information</li>
+<li>be specific and list each problem separately</li>
+</ul></li>
+<li>Why separate listings for each violation?
+
+<ul>
+<li>risk of repeating problematic aspect</li>
+<li>may not be possible to fix all problems</li>
+</ul></li>
+<li>Where problems may be found
+
+<ul>
+<li>single location in UI</li>
+<li>two or more locations that need to be compared</li>
+<li>problem with overall structure of UI</li>
+<li>something is missing
+
+<ul>
+<li>ambiguous with early prototypes; clarify in advance</li>
+<li>sometimes features are implied by design docs and just haven’t been “implemented” – relax on those</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>Severity Ratings：</p>
+
+<ul>
+<li>0 - don’t agree that this is a usability problem</li>
+<li>1 - cosmetic problem </li>
+<li>2 - minor usability problem</li>
+<li>3 - major usability problem; important to fix</li>
+<li>4 - usability catastrophe; imperative to fix</li>
+</ul>
+
+<p>Debriefing</p>
+
+<ul>
+<li>Conduct with evaluators, observers, and development team members</li>
+<li>Discuss general characteristics of UI</li>
+<li>Suggest potential improvements to address major usability problems</li>
+<li>Dev. team rates effort to fix</li>
+<li>Brainstorm solutions</li>
+</ul>
+
+<p><a name="2"></a></p>
+
+<h2>设计启发（1）</h2>
+
+<h3>显示系统状态</h3>
+
+<p>显示时间</p>
+
+<p>显示空间</p>
+
+<p>显示改变</p>
+
+<p>显示动作</p>
+
+<p>显示下一步</p>
+
+<p>显示完成</p>
+
+<h3>相似的象征和语言</h3>
+
+<p>相似的特征</p>
+
+<p>相似的语言</p>
+
+<p>相似的分类</p>
+
+<p>相似的选择</p>
+
+<h3>用户控制和自由</h3>
+
+<p>自由的撤销</p>
+
+<p>自由的探索</p>
+
+<h3>一致性和标准</h3>
+
+<p>一致性布局</p>
+
+<p>一致的名字</p>
+
+<p>一致的选择</p>
+
+<p>清除选择</p>
+
+<h3>错误预防</h3>
+
+<p>防止数据丢失</p>
+
+<p>防止混乱</p>
+
+<p>防止误解</p>
+
+<p>防止错误的输入</p>
+
+<p>防止不必要的约束</p>
+
+<p><a name="3"></a></p>
+
+<h2>设计启发（2）</h2>
+
+<h3>在回忆中识别</h3>
+
+<p>识别：避免代码</p>
+
+<p>识别：避免额外的障碍</p>
+
+<p>预览识别</p>
+
+<h3>灵活性和效率</h3>
+
+<p>灵活的快捷键</p>
+
+<p>灵活的默认选项</p>
+
+<p>灵活性：周边信息</p>
+
+<p>灵活的主动性</p>
+
+<p>灵活性：推荐</p>
+
+<p>灵活性：保证相关</p>
+
+<h3>审美和极简设计</h3>
+
+<p>极简主义：在明显的位置</p>
+
+<p>极简主义：信噪比</p>
+
+<p>极简的登录</p>
+
+<p>极简主义：冗余</p>
+
+<p>极简主义：功能性</p>
+
+<h3>从错误中识别、诊断和恢复</h3>
+
+<p>错误：让问题清晰</p>
+
+<p>错误：提供解决方案</p>
+
+<p>错误：显示前进的道路</p>
+
+<p>错误：提供替代方案</p>
+
+<p>识别错误</p>
+
+<h3>帮助</h3>
+
+<p>使用例子帮助学习</p>
+
+<p>使用例子帮助选择</p>
+
+<p>帮助引导方向</p>
+
+<p>帮助显示步骤</p>
+
+<p>帮助指出事情</p>
+
+<p>帮助提供更多的信息</p>
+
+<p>帮助清晰化</p>
+
+<p>帮助人们得到乐趣</p>
+
+</body>
+</html>
