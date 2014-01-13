@@ -1,3 +1,7 @@
+![](./img/logo.png)
+## 说明： ##
+这是[《现代机械设计方法》](http://book.douban.com/subject/1514453/)这本书的笔记总结，只是简单的总结，有时间以后还会补充。源文档放在了[Github]()上。通过使用[LiteIDE编辑器](https://code.google.com/p/liteide/)批量转成html格式，放在[SAE](http://conanxincv.sinaapp.com/project5/)上。
+
 ## 1.[概述](https://github.com/conanxin/Notes/blob/master/现代机械设计方法/1.md) ##
 - 1.1传统设计与现代设计及其范畴
 - 1.2设计过程和设计技术简述
