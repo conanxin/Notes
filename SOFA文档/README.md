@@ -1,26 +1,26 @@
-## SOFA学习文档目录 ##
+## [SOFA](http://www.sofa-framework.org/)学习文档目录 ##
 
-- ### Sofa介绍 ###
+- ### [1.Sofa介绍](https://github.com/conanxin/Notes/blob/master/SOFA文档/1.md) ###
 
-- ### SOFA: A Multi-Model Framework for Interactive Physcial Simulation ###
+- ### [2.SOFA: A Multi-Model Framework for Interactive Physcial Simulation](https://github.com/conanxin/Notes/blob/master/SOFA文档/2.md) ###
 
-- ### Sofa Documentation ###
+- ### [3.Sofa Documentation](https://github.com/conanxin/Notes/blob/master/SOFA文档/3.md) ###
 
-- ### Sofa-an open source framework for medical simulation ###
+- ### [4.Sofa-an open source framework for medical simulation](https://github.com/conanxin/Notes/blob/master/SOFA文档/4.md) ###
 
-- ### Sofa的编译 ###
+- ### [5.Sofa的编译](https://github.com/conanxin/Notes/blob/master/SOFA文档/5.md) ###
 
-- ### Sofa Tutorials ###
+- ### [6.Sofa Tutorials](https://github.com/conanxin/Notes/blob/master/SOFA文档/6.md) ###
 
-- ### Sofa Tutorials-Step by Step文档 ###
+- ### [7.Sofa Tutorials-Step by Step文档](https://github.com/conanxin/Notes/blob/master/SOFA文档/7.md) ###
 
-- ### SOFA中切割的例子 ###
+- ### [8.SOFA中切割的例子](https://github.com/conanxin/Notes/blob/master/SOFA文档/8.md) ###
 
-- ### SofaCUDA ###
+- ### [9.SofaCUDA](https://github.com/conanxin/Notes/blob/master/SOFA文档/9.md) ###
 
-- ### SofaCuda例子 ###
+- ### [10.SofaCuda例子](https://github.com/conanxin/Notes/blob/master/SOFA文档/10.md) ###
 
-- ### Sofa Sensable 插件 ###
+- ### [11.Sofa Sensable 插件](https://github.com/conanxin/Notes/blob/master/SOFA文档/11.md) ###
 
-- ### 使用Omni在Sofa中实现Carving ###
+- ### [12.使用Omni在Sofa中实现Carving](https://github.com/conanxin/Notes/blob/master/SOFA文档/12.md) ###
 
