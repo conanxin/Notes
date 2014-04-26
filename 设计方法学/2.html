@@ -1,0 +1,502 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	pre,code {
+		word-wrap: break-word;
+	}	
+	/*
+	table, pre {
+		page-break-inside: avoid;
+	}
+	*/
+}
+</style>
+<title>2.md</title>
+</head>
+<body>
+<h2>第二章 技术过程与技术系统</h2>
+
+<h3>第一节 技术过程及其影响因素</h3>
+
+<p>一、技术过程的有关概念</p>
+
+<ol>
+<li><p>作业对象</p>
+
+<p>在技术过程中承受操作者及技术系统施加的作用，从而自己的状态产生改变或转变，使客观需要得到满足的物质称为作业对象。</p></li>
+<li><p>技术过程</p>
+
+<p>技术过程是一个人工过程，通过这一过程，使作业对象在一定环境下，经过操作者及技术系统共同施加的作用，以有计划、有目的的方式产生预期的转变，获得能满足客观需要的结果。</p></li>
+<li><p>技术系统</p>
+
+<p>技术系统是确定的人工系统的通称，它和操作者一起在技术过程中发挥预定的作用，使作业对象产生需要的转换。</p></li>
+<li><p>功能</p>
+
+<p>功能就是某个系统为解决某问题所应实现的动作或发挥的作用。</p></li>
+</ol>
+
+<p>二、研究技术过程的目的</p>
+
+<p>研究技术过程的目的在于寻求和合理确定满足客观需要的最佳设计目标。技术过程分析在设计工作中具有重要意义：</p>
+
+<ul>
+<li><p>第一，当人们有了某种客观需要时，首先就要找出满足这种需要的过程，并使之在人们的控制下完成。</p></li>
+<li><p>第二，大多数情况下提出的设计目标是某种具体产品。</p></li>
+<li><p>第三，满足同一需求还可有不同的技术过程，一般地说，技术系统亦不同。</p></li>
+</ul>
+
+<p>三、影响技术过程的因素</p>
+
+<ol>
+<li><p>设计要求</p>
+
+<p>在设计过程中，确定技术过程的基本依据是设计要求。</p></li>
+<li><p>工作原理</p>
+
+<p>技术过程的不同主要表现在它所采用的工作原理不同。</p></li>
+<li><p>作业对象及其状态</p>
+
+<p>作业对象是技术过程中产生转换的主要物质。</p></li>
+<li><p>技术系统和操作者</p>
+
+<p>技术系统是实现所需转换的手段，操作者则承担转换所必需的操作和控制。</p></li>
+<li><p>环境条件</p>
+
+<p>要考虑环境条件的影响，其中包括时间条件和空间条件。</p></li>
+</ol>
+
+<h3>第二节 技术过程的结构模式</h3>
+
+<p>一、技术过程的描述</p>
+
+<p>二、技术过程的结构模式</p>
+
+<p>一般，根据完成整个技术过程所需发挥的作用及其在技术过程中的地位，可将技术过程分为下述几个分过程：</p>
+
+<ol>
+<li><p>主要过程</p>
+
+<p>通过这一过程实现作业对象的转换，使客观需求得到满足。</p></li>
+<li><p>辅助过程</p>
+
+<p>保证主要过程的实现和保证其质量的过程称为辅助过程。</p></li>
+<li><p>驱动过程</p>
+
+<p>技术过程的实现常需消耗一定形式的能量，因而需要有提供能源的过程，这就是驱动过程。</p></li>
+<li><p>控制过程</p>
+
+<p>为实现整个技术过程，需根据工作进程的具体情况对工作进程进行必要的操纵和调整，这种操纵和调整的过程就是控制过程。</p></li>
+<li><p>联接和支承作用</p>
+
+<p>由于技术过程是一个复合过程，保证各分过程在时间和空间上彼此配合及其配置的正确性，是保证技术过程正常进行的必要条件，这一条件是由技术过程中的联接和支撑作用实现的。</p></li>
+</ol>
+
+<h3>第三节 选定技术过程的步骤</h3>
+
+<p>可将技术过程的选定步骤归纳如下：</p>
+
+<ol>
+<li>根据设计要求，明确满足客观需求所须实现的主要转换及作业对象；</li>
+<li>根据已有的理论知识或实践经验，选定实现主要转换所依据的工作原理；</li>
+<li>全面考虑、明确与实现技术过程有关的环境条件；</li>
+<li>根据选定的工作原理，考虑环境条件，首先定出主要过程，然后补充其他过程，绘出技术过程结构图；</li>
+<li>考虑经济、可靠、高效及操作简单、方便，确定技术系统与操作者的分工，初步划定技术系统的边界，即确定技术系统应实现的功能。</li>
+</ol>
+
+<h3>第四节 技术系统的性质</h3>
+
+<p>一、系统的整体性质</p>
+
+<p>主要指系统作为一个整体所表现出来的各种性质。</p>
+
+<p>二、工作性能</p>
+
+<p>主要指系统工作之后其内部组成部分或组成部分之间的关系的某些特性。</p>
+
+<p>三、基本设计性质</p>
+
+<p>在系统性质中有五个方面：结构、形状、材料、尺寸及工作表面，称之为基本设计性质。机构表示了系统的实体由哪些元件组成及元件间的关系和配置，其他四个方面则描述和决定了系统内元件的状态。</p>
+
+<h3>第五节 技术系统的结构分析</h3>
+
+<p>一、技术系统内存在的关系</p>
+
+<p>二、技术系统的结构</p>
+
+<p>技术系统的作用是完成规定的任务。根据不同的原则，我们可以将系统分为若干单元，这些单元以一定的规律结合起来，构成整个系统。</p>
+
+<ol>
+<li><p>从功能角度分析</p>
+
+<p>从功能观点来看，技术系统应由下列单元组成：</p></li>
+</ol>
+
+<pre><code>- 工作单元：实现主要转换的单元。
+- 辅助单元：提供保证工作单元正常工作所必须的服务的单元。
+- 驱动单元：以所期望的方式为系统其他单元提供或转换其所需能量的单元。
+- 控制单元：接受和处理信息，发出控制指令。
+- 联接和支承单元：实现系统内部单元之间及系统与外部的联接与支撑。
+</code></pre>
+
+<ol>
+<li><p>从制造及装配角度分析</p></li>
+<li><p>从用户角度分析</p></li>
+</ol>
+
+<p>三、技术系统的边界</p>
+
+<p>确定技术系统功能范围的界限称为技术系统的边界。</p>
+
+<h3>第六节 技术系统功能结构图的绘制</h3>
+
+<p>一、总功能、分功能、功能元与功能载体</p>
+
+<p>二、功能的描述</p>
+
+<p>主要要求描述简单、明确，不会引起误解。</p>
+
+<p>三、功能分解</p>
+
+<ol>
+<li><p>功能分解的目的</p>
+
+<p>进行功能分解的主要目的就是将总功能分解为较简单的分功能或功能元，以便找出相应的实体解答方案。</p></li>
+<li><p>功能分解的方法</p>
+
+<p>功能分解的工作步骤归纳如下：</p></li>
+</ol>
+
+<pre><code>- 根据经验、惯例或参考现有系统，初步定出所需完成的操作或须经过的作用过程。
+- 明确在此过程中系统应完成的动作和发挥的作用及有关客体。
+- 根据各动作或作用初步划分分功能。
+- 补充其他方面的考虑，完成整个系统的功能分解。
+</code></pre>
+
+<p>四、功能结构图的建立</p>
+
+<ol>
+<li><p>什么是功能结构图</p>
+
+<p>功能结构图是一种图形，包括了对系统的输入及输出的适当描述、为实现其总功能所应具有的分功能和功能元以及它们之间的顺序关系。</p></li>
+<li><p>对功能结构图的要求</p>
+
+<p>建立功能结构图时应注意以下要求：</p></li>
+</ol>
+
+<pre><code>- 体现分功能或功能元间的顺序关系。
+- 各分功能和功能元的划分及其排列要有一定的理论根据或经验支持。
+- 不能漏掉必要的分功能或功能元。
+- 尽可能简单、明了，但要便于实体解答方案的求取。
+</code></pre>
+
+<ol>
+<li><p>功能结构图的变化</p></li>
+<li><p>建立功能结构图的步骤</p>
+
+<p>建立功能结构图的工作步骤：</p></li>
+</ol>
+
+<pre><code>- 根据技术过程分析，划定技术系统的边界，定出其总功能。
+- 划分分功能及功能元。
+- 建立功能结构图。
+</code></pre>
+
+<h3>第七节 技术系统的发展</h3>
+
+<p>发展技术系统通常从下述方面考虑：</p>
+
+<ol>
+<li>建立技术系统所应要求的范围愈来愈广。</li>
+<li>注意工作原理的更新，特别是技术过程的先进性。</li>
+<li>注意操作者参与的程度。</li>
+<li>技术系统输入的改变。</li>
+<li>系统内动作方式的改进。</li>
+</ol>
+
+</body>
+</html>
